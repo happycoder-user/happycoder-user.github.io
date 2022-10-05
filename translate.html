@@ -1,16 +1,13 @@
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <h1>Google Translate</h1>
 
 <textarea name="" id="input" cols="30" rows="10"></textarea>
 <br>
-<!-- <div id="output">
-</div> -->
+<div id="output">
+</div>
 <br>
 <div id="google_translate_element"></div>
-<input type="hidden" name="" id="output" cols="30" rows="10"></textarea>
-
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
@@ -20,7 +17,6 @@
         $("#input").on('change keyup paste', function() {
             console.log('paste', $("#input").val());
             $('#output').text($("#input").val());
-            // $('#output').text($("#input").val());
         });
     });
 </script>
